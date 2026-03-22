@@ -1,0 +1,32 @@
+\chapter{Трассировка программы}
+
+В таблице 3 представлена трассировка выполнения программы.
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+
+\begin{table}[ht]
+\small
+\centering
+\caption{Таблица трассировки программы}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multirow{2}{*}{\makecell{Номер\\шага}} & \multirow{2}{*}{\makecell{Номер\\регистра}} & \multicolumn{2}{c|}{\makecell{Расчетные значения}} & \multirow{2}{*}{\makecell{Значения после\\выполнения программы\\в лаборатории}} \\
+\cline{3-4}
+& & \makecell{До выполнения\\программы} & \makecell{После выполнения\\программы} & \\
+\hline
+1 & R1 & 12 & F4 & F4 \\
+\hline
+2 & R3 & 4C9 & 4CA & 4CA \\
+\hline
+3 & R3 & 4CA & D7 & D7 \\
+\hline
+4 & R4 & FCB7 & FCE0 & FCE0 \\
+\hline
+5 & R5 & E4E431 & DA1960 & DA1960 \\
+\hline
+6 & R4 & FCB7 & FC60 & FC60 \\
+\hline
+\end{tabular}%
+}
+\end{table}

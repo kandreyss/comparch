@@ -1,0 +1,19 @@
+\begin{center}
+    3. ТЕКСТ ПРОГРАММЫ
+\end{center}
+
+\begin{table}[ht]
+    \small
+    \centering
+    \caption{Текст программы в мнемонических и машинных кодах}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}|c|c|c|c|c|}
+        \hline
+        Оператор & Адрес & Мнемокод                 & \begin{tabular}[c]{@{}c@{}}Шестнадцатеричный\\ код\end{tabular} & Комментарий \\ \hline
+        1        & 2A8   & MNEGW -(R4), (RE)        & 74 7E AE                                                        & X4 = -X4    \\ \hline
+        2        & 2AB   & DECB @(R1)+              & 91 96                                                           & X1 = X1-1   \\ \hline
+        3        & 2AD   & XORL2 (R6)+, @(R5)+      & 95 86 CC                                                        & X5=X5xorX6  \\ \hline
+        4        & 2B0   & SUBL3 (R2)+, (RF), -(R6) & 67 65 82 C3                                                     & X6=X5-X2    \\ \hline
+        5        & 2B4   & ADDW2 (R4), (R3)+        & 83 64 A0                                                        & X3=X3+X4    \\ \hline
+        6        & 2B7   & HALT                     & 00                                                              & Остановка   \\ \hline
+    \end{tabular*}
+\end{table}
