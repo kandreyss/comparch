@@ -2,18 +2,23 @@
     2. КАРТА РАСПРЕДЕЛЕНИЯ ПАМЯТИ
 \end{center}
 
+В \hyperref[tab:mem_alloc]{таблице~\ref*{tab:mem_alloc}} представлена карта распределения памяти.
+В ней указаны исходные десятичные значения операндов, их шестнадцатеричные эквиваленты, 
+а также базовые адреса загрузки данных и кода программы.
+
 \begin{table}[!ht]
     \caption{Карта распределения памяти}
+    \label{tab:mem_alloc}
     \centering
     \begin{tabular}{|c|c|c|c|}
         \hline
-        Операнд & Десятичное значени & Шестнадцатеричный код & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Адрес загрузки\\ (16)\end{tabular}} \\ \hline
-        X1      & 18                 & 12                    & 00000008                                                                           \\ \hline
-        X2      & -23                & E9                    & 00000012                                                                           \\ \hline
-        X3      & 1225               & 4C9                   & 0000001C                                                                           \\ \hline
-        X4      & -841               & FCB7                  & 00000026                                                                           \\ \hline
-        X5      & 15000625           & E4E431                & 00000030                                                                           \\ \hline
-        X6      & -707281            & FFF5352F              & 0000003A                                                                           \\ \hline
+        Операнд & Десятичное значение & Шестнадцатеричный код & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Адрес загрузки\\ (16)\end{tabular}} \\ \hline
+        X\textsubscript{1}      & 18                 & 12                    & 00000008                                                                           \\ \hline
+        X\textsubscript{2}      & --23               & E9                   & 00000012                                                                          \\ \hline
+        X\textsubscript{3}      & 1225               & 4C9                   & 0000001C                                                                           \\ \hline
+        X\textsubscript{4}      & --841              & FCB7                 & 00000026                                                                          \\ \hline
+        X\textsubscript{5}      & 15000625           & E4E431                & 00000030                                                                           \\ \hline
+        X\textsubscript{6}      & --707281           & FFF5352F             & 0000003A                                                                          \\ \hline
                 &                    & Промежуточные ячейки  & 0000006С                                                                           \\ \hline
                 &                    & Текст программы       & 2A8                                                                                \\ \hline
     \end{tabular}
