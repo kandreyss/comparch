@@ -1,0 +1,25 @@
+\begin{center}
+    2. КАРТА РАСПРЕДЕЛЕНИЯ ПАМЯТИ
+\end{center}
+
+В \hyperref[tab:map]{таблице~\ref{tab:map}} представлена карта распределения памяти.
+
+\begin{table}[!ht]
+    \centering
+    \caption{Карта распределения памяти}
+    \label{tab:map}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        Операнд & Десятичное значение & Шестнадцатеричный код & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Адрес загрузки\\ (16)\end{tabular}} \\ \hline
+        X1      & -33                 & DF                        & 0000001C                                                      \\ \hline
+        X2      & 28                  & 1C                        & 00000026                                                      \\ \hline
+        X3      & -1600               & F9C0                      & 00000030                                                      \\ \hline
+        X4      & 1156                & 0484                      & 0000003A                                                      \\ \hline
+        X5      & 2560000             & 00271000                  & 00000044                                                      \\ \hline
+        X6      & -1336336            & FFEB9BF0                  & 0000004E                                                      \\ \hline
+                &                     & Промежуточная ячейка      & 00000080                                                      \\ \hline
+                &                     & Текст программы           & 2DA                                                           \\ \hline
+    \end{tabular}
+    }
+\end{table}

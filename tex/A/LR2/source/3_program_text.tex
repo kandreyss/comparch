@@ -1,0 +1,21 @@
+\begin{center}
+    3. ТЕКСТ ПРОГРАММЫ
+\end{center}
+
+\begin{table}[ht]
+    \caption{Содержимое регистров в зависимости от типов адресации}
+    \label{tab:registers}
+    \centering
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+        Оператор & Адрес & Мнемокод                  & \begin{tabular}[c]{@{}c@{}}Шестнадцатеричный\\ код\end{tabular} & Комментарий   \\ \hline
+        1        & 2A8   & ADWC @(R5)+, (R6)         & 66 95 D8                                                        & X6=X6+X5+C \\ \hline
+        2        & 2AB   & INCW -(R3)                & 73 B6                                                           & X3=X3+1   \\ \hline
+        3        & 2AD   & MCOMB -(RB), (R2)+        & 82 7B 92                                                        & X2=X2notX2    \\ \hline
+        4        & 2B0   & SUBL3 (R3)+, (R4), @(R5)+ & 95 64 83 C3                                                     & X5=X4-X3      \\ \hline
+        5        & 2B4   & BISB2 (RC), -(R1)         & 71 6C 88                                                        & X1=X1orX2     \\ \hline
+        6        & 2B7   & HALT                      & 00                                                              & Остановка     \\ \hline
+    \end{tabular}
+    }
+\end{table}

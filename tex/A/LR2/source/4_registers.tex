@@ -1,0 +1,26 @@
+\begin{center}
+    4. СОДЕРЖИМОЕ РЕГИСТРОВ
+\end{center}
+
+\begin{table}[ht]
+    \caption{Содержимое регистров в зависимости от типов адресации}
+    \label{tab:registers}
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|c|c|cc|c|}
+        \hline
+        \multirow{2}{*}{Номер шага} & \multirow{2}{*}{Номер регистра} & \multicolumn{2}{c|}{Адрес}                                                                                                                                & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}Адрес в \\ промежуточной\\ ячейке\end{tabular}} \\ \cline{3-4}
+                                    &                                 & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}До выполнения\\ команды\end{tabular}} & \begin{tabular}[c]{@{}c@{}}После выполнения\\ команды\end{tabular} &                                                                                            \\ \hline
+        \multirow{2}{*}{1}          & R5                              & \multicolumn{1}{c|}{00000080}                                                        & 00000084                                                           & 00000044                                                                                   \\ \cline{2-5} 
+                                    & R6                              & \multicolumn{1}{c|}{0000004E}                                                        & 0000004E                                                           & ---                                                                                        \\ \hline
+        2                           & R3                              & \multicolumn{1}{c|}{00000032}                                                        & 00000030                                                           & ---                                                                                        \\ \hline
+        \multirow{2}{*}{3}          & RB                              & \multicolumn{1}{c|}{00000027}                                                        & 00000026                                                           & ---                                                                                        \\ \cline{2-5} 
+                                    & R2                              & \multicolumn{1}{c|}{00000026}                                                        & 00000027                                                           & ---                                                                                        \\ \hline
+        \multirow{3}{*}{4}          & R3                              & \multicolumn{1}{c|}{00000030}                                                        & 00000034                                                           & ---                                                                                        \\ \cline{2-5} 
+                                    & R4                              & \multicolumn{1}{c|}{0000003A}                                                        & 0000003A                                                           & ---                                                                                        \\ \cline{2-5} 
+                                    & R5                              & \multicolumn{1}{c|}{00000084}                                                        & 00000088                                                           & 00000044                                                                                   \\ \hline
+        \multirow{2}{*}{5}          & RC                              & \multicolumn{1}{c|}{00000026}                                                        & 00000026                                                           & ---                                                                                        \\ \cline{2-5} 
+                                    & R1                              & \multicolumn{1}{c|}{0000001D}                                                        & 0000001C                                                           & ---                                                                                        \\ \hline
+    \end{tabular}%
+    }
+\end{table}

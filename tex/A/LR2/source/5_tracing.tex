@@ -1,0 +1,21 @@
+\begin{center}
+    5. ТАБЛИЦА ТРАССИРОВКИ
+\end{center}
+
+\begin{table}[!ht]
+    \centering
+    \caption{Трассировка программы}
+    \label{tab:tracing}
+    \resizebox{\textwidth}{!}{%
+            \begin{tabular}{|c|c|cc|c|}
+            \hline
+            \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}Номер\\ шага\end{tabular}} & \multirow{2}{*}{Адрес} & \multicolumn{2}{c|}{Расчетные значения} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}Значения после\\ выполнения команды\\ в лаборатории\end{tabular}} \\ \cline{3-4}
+            &                        & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}До выполнения\\ команды\end{tabular}} & \begin{tabular}[c]{@{}c@{}}После выполнения\\ команды\end{tabular} &                                                                                                              \\ \hline
+            1                                                                     & 0000004E               & \multicolumn{1}{c|}{FFEB9BF0}                                                        & 0012ABF0                                                           & 0012ABF0                                                                                                     \\ \hline
+            2                                                                     & 00000030               & \multicolumn{1}{c|}{F9C0}                                                            & F9C1                                                               & F9C1                                                                                                         \\ \hline
+            3                                                                     & 00000026               & \multicolumn{1}{c|}{1C}                                                              & E3                                                                 & E3                                                                                                           \\ \hline
+            4                                                                     & 00000044               & \multicolumn{1}{c|}{00271000}                                                        & 00000AC3                                                           & 00000AC3                                                                                                     \\ \hline
+            5                                                                     & 0000001C               & \multicolumn{1}{c|}{DF}                                                              & DF                                                                 & DF                                                                                                           \\ \hline
+        \end{tabular}%
+    }
+\end{table}
