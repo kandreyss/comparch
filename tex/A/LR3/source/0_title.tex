@@ -1,0 +1,75 @@
+% Данные преподавателя
+\newcommand{\Dep}{25} % Кафедра
+\newcommand{\teacherPos}{доцент, канд.техн.наук}   % Должность
+\newcommand{\teacherName}{Марковская Н.В.}           % Имя преподавателя
+
+% Данные лабораторной работы
+\newcommand{\labNum}{2} % Номер
+\newcommand{\labTitle}{Способы адресации операндов с использованием регистров общего назначения. Адресации со смещением} % Название
+\newcommand{\courseName}{Архитектура ЭВМ} % Название дисциплины
+
+% Данные студента
+\newcommand{\studentGroup}{2454} % Номер группы
+\newcommand{\studentName}{Калашников А.С.} % Имя студента
+\newcommand{\cityYear}{Санкт-Петербург 2026} % Город и год
+
+\thispagestyle{empty}
+\title{}
+\author{}
+\date{}
+
+{\fontsize{12pt}{14.4pt}\selectfont
+    \begin{center}
+        ГУАП
+        \vspace{20pt}
+        
+        КАФЕДРА №\Dep{}
+    \end{center}
+    
+    \vspace{25pt}
+    \noindent
+    ОТЧЁТ\\
+    ЗАЩИЩЕН С ОЦЕНКОЙ\par
+    \vspace{6pt}
+    \noindent
+    ПРЕПОДАВАТЕЛЬ
+    \vspace{6pt}
+
+    \noindent
+    \begin{tabular*}{\textwidth}{@{}p{5cm}@{\extracolsep{\fill}}p{4cm}p{5cm}@{}}
+        \centering \teacherPos & \centering & \centering \teacherName \tabularnewline \cline{1-1} \cline{2-2} \cline{3-3}
+        \scriptsize \centering должность, уч. степень, звание & 
+        \scriptsize \centering подпись, дата & 
+        \scriptsize \centering инициалы, фамилия \tabularnewline
+    \end{tabular*}
+    
+    \vspace{50pt}
+    
+    \begin{center}
+        {\fontsize{14pt}{16.8pt}\selectfont ОТЧЕТ О ЛАБОРАТОРНОЙ РАБОТЕ №\labNum}
+        \vspace{30pt}
+        
+        <<\labTitle{}>>
+        \vspace{30pt}
+        
+        по курсу: \courseName{}
+    \end{center}
+    
+    \vspace{150pt}
+    
+    \noindent РАБОТУ ВЫПОЛНИЛ\par
+    \vspace{12pt}
+    \noindent
+    \renewcommand{\arraystretch}{0.}
+    \begin{tabular*}{\textwidth}{@{}l @{\extracolsep{\fill}} p{3.5cm} p{0.1cm} p{3.5cm} p{0.1cm} p{3.5cm}@{}}
+        СТУДЕНТ гр. № \hspace{15pt} & \centering \studentGroup & & & & \centering \studentName \tabularnewline 
+        \cline{2-2} \cline{4-4} \cline{6-6}
+        & & & \scriptsize \centering подпись, дата & & \scriptsize \centering инициалы, фамилия \tabularnewline
+    \end{tabular*}
+    
+    \vfill
+    
+    \begin{center}
+        \cityYear
+    \end{center}
+}
